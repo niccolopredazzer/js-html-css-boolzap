@@ -21,7 +21,7 @@
     height: 90vh;
     width: 70vw;
     background-color: white;
-    z-index: 100;
+    z-index: 1;
     margin: auto;
     display: flex;
 }
@@ -111,7 +111,18 @@ aside .box-azzurro-notifiche-desktop .testo {
 aside .cerca {
     height: 40px;
     background-color: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+aside .cerca input {
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
 
 aside .box-preview-chat {
     height: calc(90vh - 210px);
