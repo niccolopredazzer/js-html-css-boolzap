@@ -66,6 +66,46 @@ aside .destra i {
 aside .box-azzurro-notifiche-desktop {
     height: 90px;
     background-color: #9de1fe;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+aside .bell {
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background-color: white;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+aside .bell i {
+    font-size: 20px;
+    color: #9de1fe;
+}
+
+aside .box-azzurro-notifiche-desktop .testo {
+    padding-left: 30px;
+}
+
+.box-azzurro-notifiche-desktop .testo p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.box-azzurro-notifiche-desktop .testo a {
+    color: #414b50;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.box-azzurro-notifiche-desktop .testo a:hover {
+    border-bottom: 1px solid black;
 }
 
 aside .cerca {
