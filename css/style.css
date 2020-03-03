@@ -177,7 +177,15 @@ aside .preview-chat .testo span {
     font-size: 15px;
 }
 
+aside .orario  {
+    margin-left: auto;
+    padding-right: 5px;
+}
 
+aside .orario span {
+    color: #919191;
+    font-size: 12px;
+}
 
 /*     PARTE DESTRA   */
 
