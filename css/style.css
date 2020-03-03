@@ -51,12 +51,12 @@ aside .nav-sinistra {
     cursor: pointer;
 }
 
-.nav-sinistra .destra {
+.nav-sinistra .icone {
     margin-left: auto;
     padding-right: 10px;
 }
 
-aside .destra i {
+.icone i {             /*qui stilizzo le icone sia per la parte destra che per la sinistra così risparmio linee*/
     font-size: 20px;
     color: #919191;
     padding: 10px;
@@ -197,6 +197,32 @@ aside .orario span {
     height: 80px;
     background-color: #ededed;
     border-left: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-destra .avatar {
+    padding-left: 20px;
+}
+
+.nav-destra .testo {
+    padding-left: 20px;
+}
+
+.nav-destra .testo p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-destra .testo span {
+    color: grey;
+    font-size: 14px;
+}
+
+.nav-destra .icone {
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .box-conversazioni .chat {
