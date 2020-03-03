@@ -289,10 +289,9 @@ aside .orario span {
 }
 
 .box-conversazioni .chat  span {
-    font-size: 11px;
+    font-size: 10px;
     color: #919191;
-    margin-left: auto;
-    padding-right: 4px;
+    align-self: flex-end;
 }
 
 .box-conversazioni .chat .terzo-messaggio-text {
