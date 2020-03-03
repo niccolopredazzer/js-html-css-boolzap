@@ -130,7 +130,7 @@ aside .box-preview-chat {
     overflow: auto;
 }
 
-/*stilizzo la scrollbar*/
+/*stilizzo la scrollbar (anche se su mozilla non si vede)*/
 
 ::-webkit-scrollbar {
     width: 6px;
@@ -204,6 +204,7 @@ aside .orario span {
 
 .nav-destra .avatar {
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .nav-destra .testo {
@@ -235,4 +236,31 @@ aside .orario span {
     height: 80px;
     background-color: #ededed;
     border-left: 2px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.box-conversazioni .write-msg .icone {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.box-conversazioni .write-msg .scrivi input {
+    height: 40px;
+    width: 700px;
+    border-radius: 5px;
+    border: 1px solid #ededed;
+    padding-left: 20px;
+}
+
+.box-conversazioni .write-msg .microfono {
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.box-conversazioni .write-msg .microfono i {
+    font-size: 20px;
+    color: #919191;
+    cursor: pointer;
 }
