@@ -163,6 +163,24 @@ aside .preview-chat .avatar {
     padding-left: 10px;
 }
 
+aside .preview-chat .testo {
+    margin-left: 20px;
+}
+
+aside .preview-chat .testo p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+aside .preview-chat .testo span {
+    color: #919191;
+    font-size: 15px;
+}
+
+
+
+/*     PARTE DESTRA   */
+
 .box-conversazioni {
     width: 65%;
 }
