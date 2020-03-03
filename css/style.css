@@ -155,6 +155,12 @@ aside .box-preview-chat {
 aside .preview-chat {
     height: 70px;
     border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+aside .preview-chat .avatar {
+    padding-left: 10px;
 }
 
 .box-conversazioni {
