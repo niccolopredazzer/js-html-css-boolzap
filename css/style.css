@@ -26,15 +26,41 @@
     display: flex;
 }
 
+ /*    ASIDE    */
+
 aside {
     width: 35%;
-    background-color: gray;
 }
 
 aside .nav-sinistra {
     height: 80px;
     background-color: #ededed;
     border-right: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.avatar img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-sinistra .avatar {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.nav-sinistra .destra {
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+aside .destra i {
+    font-size: 20px;
+    color: #919191;
+    padding: 10px;
+    cursor: pointer;
 }
 
 aside .box-azzurro-notifiche-desktop {
@@ -47,9 +73,41 @@ aside .cerca {
     background-color: #ededed;
 }
 
+aside .box-preview-chat {
+    height: calc(90vh - 210px);
+    background-color: white;
+    overflow: auto;
+}
+
+/*stilizzo la scrollbar*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(232, 232, 232, 1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0.4);
+}
+
+aside .preview-chat {
+    height: 70px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
 .box-conversazioni {
     width: 65%;
-    background-color: blue;
 }
 
 .box-conversazioni .nav-destra {
@@ -67,4 +125,5 @@ aside .cerca {
 .box-conversazioni .write-msg {
     height: 80px;
     background-color: #ededed;
+    border-left: 2px solid #e0e0e0;
 }
