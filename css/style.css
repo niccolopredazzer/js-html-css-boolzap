@@ -118,13 +118,25 @@ aside .cerca {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+
+aside .search-bar-icon {
+    position: absolute;
+    left: 30px;
+}
+
+aside .search-bar-icon i {
+    color: #999999;
+}
+
 
 aside .cerca input {
     height: 30px;
-    width: 400px;
-    border-radius: 5px;
-    border: 1px solid white;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    padding-left: 30px;
 }
 
 
