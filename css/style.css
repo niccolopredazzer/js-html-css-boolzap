@@ -21,6 +21,50 @@
     height: 90vh;
     width: 70vw;
     background-color: white;
-    z-index: 10;
+    z-index: 100;
     margin: auto;
+    display: flex;
+}
+
+aside {
+    width: 35%;
+    background-color: gray;
+}
+
+aside .nav-sinistra {
+    height: 80px;
+    background-color: #ededed;
+    border-right: 1px solid #e0e0e0;
+}
+
+aside .box-azzurro-notifiche-desktop {
+    height: 90px;
+    background-color: #9de1fe;
+}
+
+aside .cerca {
+    height: 40px;
+    background-color: #ededed;
+}
+
+.box-conversazioni {
+    width: 65%;
+    background-color: blue;
+}
+
+.box-conversazioni .nav-destra {
+    height: 80px;
+    background-color: #ededed;
+    border-left: 1px solid #e0e0e0;
+}
+
+.box-conversazioni .chat {
+    height: calc(90vh - 160px);
+    background-image:url(https://fsa.zobj.net/crop.php?r=Y7XpYTU5wXAZHT1I-HGkqNiqY1umyP2ahrm8H1akctM1u5gRfs35OOglkZ8Cj3zonzO0Gh7mBcZ3bi5czNKnkuqe-F1E1iJjTvnOB1d5p2o59NL3le93Wd6fOMo-lSfWf-IgvhxkJdQv8RSV);
+    background-size: contain;
+}
+
+.box-conversazioni .write-msg {
+    height: 80px;
+    background-color: #ededed;
 }
