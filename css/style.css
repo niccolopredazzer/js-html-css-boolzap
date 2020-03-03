@@ -272,6 +272,15 @@ aside .orario span {
     justify-content: center;
     margin-right: 70px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-conversazioni .chat  span {
+    font-size: 11px;
+    color: #919191;
+    margin-left: auto;
+    padding-right: 4px;
 }
 
 .box-conversazioni .chat .terzo-messaggio-text {
@@ -284,6 +293,8 @@ aside .orario span {
     align-items: center;
     justify-content: center;
     margin-left: 70px;
+    display: flex;
+    flex-direction: column;
 }
 
 .box-conversazioni .write-msg {
