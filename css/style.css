@@ -258,21 +258,25 @@ aside .orario span {
     align-items: flex-end;
 }
 
+.box-conversazioni .chat .messaggi-destra{
+    margin-top: 80px;
+}
+
 .box-conversazioni .chat .messaggio-text {
     height: 60px;
-    width: 120px;
+    width: 150px;
     background-color: lightgreen;
-    margin-bottom: 20px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 70px;
+    margin-bottom: 10px;
 }
 
 .box-conversazioni .chat .terzo-messaggio-text {
     height: 60px;
-    width: 120px;
+    width: 150px;
     background-color: white;
     border-radius: 10px;
     margin-right: auto;
