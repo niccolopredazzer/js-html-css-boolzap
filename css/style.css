@@ -10,6 +10,10 @@
     clear: both;
 }
 
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 .background {
     height: 100vh;
     width: 100vw;
@@ -157,6 +161,25 @@ aside .preview-chat {
     border-bottom: 1px solid #e0e0e0;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+aside .preview-chat .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    padding: 20px;
+    text-align: center;
+}
+
+aside .preview-chat:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
 }
 
 aside .preview-chat .avatar {
@@ -232,6 +255,8 @@ aside .orario span {
     background-size: contain;
 }
 
+
+
 .box-conversazioni .write-msg {
     height: 80px;
     background-color: #ededed;
@@ -256,7 +281,7 @@ aside .orario span {
 
 .box-conversazioni .write-msg .microfono {
     margin-left: auto;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 
 .box-conversazioni .write-msg .microfono i {
