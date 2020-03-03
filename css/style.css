@@ -130,7 +130,6 @@ aside .cerca input {
 
 aside .box-preview-chat {
     height: calc(90vh - 210px);
-    background-color: white;
     overflow: auto;
 }
 
@@ -162,6 +161,7 @@ aside .preview-chat {
     display: flex;
     align-items: center;
     position: relative;
+    background-color: white;
 }
 
 aside .preview-chat .overlay {
@@ -253,9 +253,34 @@ aside .orario span {
     height: calc(90vh - 160px);
     background-image:url(https://fsa.zobj.net/crop.php?r=Y7XpYTU5wXAZHT1I-HGkqNiqY1umyP2ahrm8H1akctM1u5gRfs35OOglkZ8Cj3zonzO0Gh7mBcZ3bi5czNKnkuqe-F1E1iJjTvnOB1d5p2o59NL3le93Wd6fOMo-lSfWf-IgvhxkJdQv8RSV);
     background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
+.box-conversazioni .chat .messaggio-text {
+    height: 60px;
+    width: 120px;
+    background-color: lightgreen;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 70px;
+}
 
+.box-conversazioni .chat .terzo-messaggio-text {
+    height: 60px;
+    width: 120px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+}
 
 .box-conversazioni .write-msg {
     height: 80px;
