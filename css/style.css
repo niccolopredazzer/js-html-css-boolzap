@@ -288,6 +288,11 @@ aside .orario span {
     flex-direction: column;
 }
 
+.box-conversazioni .chat  p {
+    align-self: flex-start;
+    padding-left: 4px;
+}
+
 .box-conversazioni .chat  span {
     font-size: 10px;
     color: #919191;
@@ -314,7 +319,6 @@ aside .orario span {
     border-left: 2px solid #e0e0e0;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .box-conversazioni .write-msg .icone {
