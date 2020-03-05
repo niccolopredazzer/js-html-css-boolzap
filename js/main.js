@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('#microfono').click(function(){
         mandaMessaggi();
-        setTimeout(riceviMessaggi, 1000);
+        setTimeout(riceviMessaggi, 1000);              //setTimeout mi permette di avere un messaggio automatico dopo 1 secondo che ho inserito il mio
     });
 
     //orario
@@ -9,6 +9,8 @@ $(document).ready(function(){
     var ore = orario.getHours();
     var minuti = orario.getMinutes();
 
+
+    //funzione per i messaggi a destra
     function mandaMessaggi() {
         var messaggioInput = $('#contenuto').val();
         $('#contenuto').val('');
@@ -16,9 +18,10 @@ $(document).ready(function(){
         messaggio.children('.testo-messaggio').text(messaggioInput);
         messaggio.children('.orario').text(ore + ':' + minuti);
         $('.chat').append(messaggio);
-
     }
 
+
+    //funzione per i messaggi a sinistra
     function riceviMessaggi(){
         var messaggio = $('.messaggio-text-bianco').clone();
         messaggio.children('.testo-messaggio').text('ciao');
@@ -26,10 +29,24 @@ $(document).ready(function(){
         $('.chat').append(messaggio);
     }
 
+
+
+    // parte della ricerca
+    $('#cerca-contatti').keyup(function(event){
+        var carattereFiltro = $(this).val().toLowerCase();
+        $('.preview-chat .testo .nome').each(function(){
+            if ($(this).text().toLowerCase().includes(carattereFiltro)) {
+                $(this).parentsUntil('.box-preview-chat').show();
+            } else {
+                $(this).parentsUntil('.box-preview-chat').hide();
+            }
+        });
+    });
+
 //non funziona
     $(document).keydown(function(event) {
           switch (event.key) {
-               case 'Enter':
+               case 13:
                mandaMessaggi();
                     break;
                default:
