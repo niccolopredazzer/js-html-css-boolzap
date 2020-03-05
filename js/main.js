@@ -23,12 +23,11 @@ $(document).ready(function(){
 
     //funzione per i messaggi a sinistra
     function riceviMessaggi(){
-        var messaggio = $('.messaggio-text-bianco').clone();
-        messaggio.children('.testo-messaggio').text('ciao');
-        messaggio.children('.orario').text(ore + ':' + minuti);
-        $('.chat').append(messaggio);
+        var messaggioAuto = $('.messaggio-text-bianco').clone();
+        messaggioAuto.children('.testo-messaggio').text('ciao');
+        messaggioAuto.children('.orario').text(ore + ':' + minuti);
+        $('.chat').append(messaggioAuto);
     }
-
 
 
     // parte della ricerca
