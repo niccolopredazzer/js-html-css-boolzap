@@ -1,7 +1,8 @@
 $(document).ready(function(){
     $('#microfono').click(function(){
         mandaMessaggi();
-        setTimeout(riceviMessaggi, 1000);              //setTimeout mi permette di avere un messaggio automatico dopo 1 secondo che ho inserito il mio
+        setTimeout(riceviMessaggi, 1000);    //setTimeout mi permette di avere un messaggio automatico dopo 1 secondo che ho inserito il mio
+
     });
 
     //orario
@@ -23,7 +24,7 @@ $(document).ready(function(){
 
     //funzione per i messaggi a sinistra
     function riceviMessaggi(){
-        var messaggioAuto = $('.messaggio-text-bianco').clone();
+        var messaggioAuto = $('.messaggi-sinistra .messaggio-text-bianco').clone();
         messaggioAuto.children('.testo-messaggio').text('ciao');
         messaggioAuto.children('.orario').text(ore + ':' + minuti);
         $('.chat').append(messaggioAuto);

@@ -271,7 +271,7 @@ aside .orario span {
 }
 
 .box-conversazioni .chat .messaggi-destra{
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 .box-conversazioni .chat .messaggio-text {
@@ -281,11 +281,10 @@ aside .orario span {
     border-radius: 10px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     margin-right: 70px;
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
 }
 
 .box-conversazioni .chat  p {
@@ -300,17 +299,20 @@ aside .orario span {
     padding-right: 10px;
 }
 
+.messaggi-sinistra {
+    display: none;
+}
+
 .box-conversazioni .chat .messaggio-text-bianco {
     height: 60px;
     width: 150px;
     background-color: white;
     border-radius: 10px;
-    margin-right: auto;
+    align-self: flex-start;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 70px;
-    display: flex;
     flex-direction: column;
 }
 
