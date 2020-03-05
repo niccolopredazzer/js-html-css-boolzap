@@ -44,16 +44,26 @@ $(document).ready(function(){
     });
 
 //non funziona
-    $(document).keydown(function(event) {
+    /*$(document).keydown(function(event) {
           switch (event.key) {
                case 13:
                mandaMessaggi();
                     break;
                default:
           }
+    });*/
+
+    var input = document.getElementById("contenuto");
+    input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("microfono").click();
+        }
     });
-
-
+    //FINALMENTE HO TROVATO UN FIX AL PROBLEMA DEL REFRESH DELLA PAGINA CON ENTER 
+    $(function() {
+    $("form").submit(function() { return false; });
+    });
 
 
 });
