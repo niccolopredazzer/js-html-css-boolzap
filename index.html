@@ -2,11 +2,12 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>boolzap</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/main.js" charset="utf-8"></script>
         <script src="https://kit.fontawesome.com/cae5ca4842.js" crossorigin="anonymous"></script>
+        <title>boolzap</title>
     </head>
     <body>
         <div class="background">
@@ -227,18 +228,16 @@
                     <div class="chat">
                         <div class="messaggi-destra">
                             <div class="messaggio-text uno">
-                                <p>Ciao</p>
-                                <span>17:22</span>
-                            </div>
-                            <div class="messaggio-text due">
-                                <p>Come stai?</p>
-                                <span>17:23</span>
+                                <p class="testo-messaggio">Ciao</p>
+                                <span class="orario">17:22</span>
                             </div>
                         </div>
-                        <div class="terzo-messaggio-text">
-                            <p>Bene e tu?</p>
-                            <span>17:36</span>
+
+                        <div class="messaggio-text-bianco">
+                            <p class="testo-messaggio">ciao</p>
+                            <span class="orario">17:36</span>
                         </div>
+
                     </div>
                     <div class="write-msg">
                         <div class="icone">
@@ -246,10 +245,10 @@
                         </div>
                         <div class="scrivi">
                             <form>
-                                <input type="text" class="input" placeholder="scrivi un messaggio">
+                                <input id="contenuto" placeholder="scrivi un messaggio">
                             </form>
                         </div>
-                        <div class="microfono">
+                        <div id="microfono">
                             <i class="fas fa-microphone"></i>
                         </div>
                     </div>
