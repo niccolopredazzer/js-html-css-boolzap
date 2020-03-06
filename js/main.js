@@ -2,7 +2,13 @@ $(document).ready(function(){
     $('#microfono').click(function(){
         mandaMessaggi();
         setTimeout(riceviMessaggi, 1000);    //setTimeout mi permette di avere un messaggio automatico dopo 1 secondo che ho inserito il mio
+    });
 
+    //cambio microfono con aeroplanino
+    $('#contenuto').focus(function() {
+        $('#microfono i').toggleClass('.fas fa-microphone .fas fa-paper-plane');
+    }).blur(function() {
+        $('#microfono i').toggleClass('.fas fa-microphone .fas fa-paper-plane');
     });
 
     //orario
@@ -34,6 +40,9 @@ $(document).ready(function(){
             }
         });
     });
+
+
+
 
     //funzione per i messaggi a destra
     function mandaMessaggi() {
