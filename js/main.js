@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $('#microfono').click(function(){
         mandaMessaggi();
-        setTimeout(riceviMessaggi, 1000);    //setTimeout mi permette di avere un messaggio automatico dopo 1 secondo che ho inserito il mio
     });
 
     //cambio microfono con aeroplanino
@@ -47,11 +46,16 @@ $(document).ready(function(){
     //funzione per i messaggi a destra
     function mandaMessaggi() {
         var messaggioInput = $('#contenuto').val();
-        $('#contenuto').val('');
-        var messaggio = $('.messaggi-destra .messaggio-text').clone();
-        messaggio.children('.testo-messaggio').text(messaggioInput);
-        messaggio.children('.orario').text(ore + ':' + minuti);
-        $('.chat').append(messaggio);
+        if (messaggioInput.trim().length > 0) {
+            $('#contenuto').val('');
+            var messaggio = $('.messaggi-destra .messaggio-text').clone();
+            messaggio.children('.testo-messaggio').text(messaggioInput);
+            messaggio.children('.orario').text(ore + ':' + minuti);
+            $('.chat').append(messaggio);
+            scroll();
+            setTimeout(riceviMessaggi, 1000);                    //setTimeout mi permette di avere un messaggio automatico dopo 1 secondo che ho inserito il mio
+        }
+
     }
 
 
@@ -61,9 +65,13 @@ $(document).ready(function(){
         messaggioAuto.children('.testo-messaggio').text('ciao');
         messaggioAuto.children('.orario').text(ore + ':' + minuti);
         $('.chat').append(messaggioAuto);
+        scroll();
     }
 
-
-
+    //scroll function
+    function scroll() {
+        var pixelscroll = $('.chat').height();
+        $('.chat').scrollTop(pixelscroll);
+    }
 
 });
