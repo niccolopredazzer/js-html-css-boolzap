@@ -8,10 +8,14 @@ $(document).ready(function(){
         $('.preview-chat').removeClass('.selected');
         $(this).addClass('.selected');
         var utenteChat = $(this).data('codiceUtente');
+        var nameChat = $(this).find('.nome');
+        var avatarChat = $(this).find('.immaginina').clone();
         $('.contenitore-messaggi').each(function(){
             if (utenteChat == $(this).data('codiceUtente')) {
                 $('.contenitore-messaggi').removeClass('active');
                 $(this).addClass('active');
+                $('.nav-destra .testo p').text(nameChat);
+                $('.nav-destra .avatar').html(avatarChat);
             }
         });
     });
