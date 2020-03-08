@@ -388,3 +388,7 @@ aside .orario span {
     color: #919191;
     cursor: pointer;
 }
+
+.template-messaggi {
+    display: none;
+}

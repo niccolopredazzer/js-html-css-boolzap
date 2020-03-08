@@ -7,9 +7,9 @@ $(document).ready(function(){
     $('.box-preview-chat .preview-chat').click(function(){
         $('.preview-chat').removeClass('.selected');
         $(this).addClass('.selected');
-        var utente = $(this).data('codiceUtente');
+        var utenteChat = $(this).data('codiceUtente');
         $('.contenitore-messaggi').each(function(){
-            if (utente == $(this).data('codiceUtente')) {
+            if (utenteChat == $(this).data('codiceUtente')) {
                 $('.contenitore-messaggi').removeClass('active');
                 $(this).addClass('active');
             }
