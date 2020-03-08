@@ -3,6 +3,19 @@ $(document).ready(function(){
         mandaMessaggi();
     });
 
+    //selezionamo la chat dalla preview
+    $('.box-preview-chat .preview-chat').click(function(){
+        $('.preview-chat').removeClass('.selected');
+        $(this).addClass('.selected');
+        var utente = $(this).data('codiceUtente');
+        $('.contenitore-messaggi').each(function(){
+            if (utente == $(this).data('codiceUtente')) {
+                $('.contenitore-messaggi').removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+    });
+
     //cambio microfono con aeroplanino
     $('#contenuto').focus(function() {
         $('#microfono i').toggleClass('.fas fa-microphone .fas fa-paper-plane');
@@ -11,9 +24,13 @@ $(document).ready(function(){
     });
 
     //orario
-    var orario = new Date()
-    var ore = orario.getHours();
-    var minuti = orario.getMinutes();
+    var date = new Date()
+    var ore = date.getHours();
+    var minuti = date.getMinutes();
+    if (minuti < 10) {
+        minuti = '0' + minuti;
+    }
+    var orarioChat = ore + ':' + minuti;
 
     //assegno al tasto enter (13) la stessa azione del click
     var input = document.getElementById("contenuto");
@@ -42,15 +59,16 @@ $(document).ready(function(){
 
 
 
+                                /* funzioni */
 
     //funzione per i messaggi a destra
     function mandaMessaggi() {
         var messaggioInput = $('#contenuto').val();
         if (messaggioInput.trim().length > 0) {
             $('#contenuto').val('');
-            var messaggio = $('.messaggi-destra .messaggio-text').clone();
+            var messaggio = $('.messaggi-destra-template .messaggio-text-template').clone();
             messaggio.children('.testo-messaggio').text(messaggioInput);
-            messaggio.children('.orario').text(ore + ':' + minuti);
+            messaggio.children('.orario').text(orarioChat);
             $('.chat').append(messaggio);
             scroll();
             setTimeout(riceviMessaggi, 1000);                    //setTimeout mi permette di avere un messaggio automatico dopo 1 secondo che ho inserito il mio
@@ -61,9 +79,9 @@ $(document).ready(function(){
 
     //funzione per i messaggi a sinistra
     function riceviMessaggi(){
-        var messaggioAuto = $('.messaggi-sinistra .messaggio-text-bianco').clone();
+        var messaggioAuto = $('.messaggi-sinistra-template .messaggio-text-bianco-template').clone();
         messaggioAuto.children('.testo-messaggio').text('ciao');
-        messaggioAuto.children('.orario').text(ore + ':' + minuti);
+        messaggioAuto.children('.orario').text(orarioChat);
         $('.chat').append(messaggioAuto);
         scroll();
     }

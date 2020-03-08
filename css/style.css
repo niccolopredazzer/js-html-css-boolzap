@@ -176,7 +176,11 @@ aside .preview-chat {
     background-color: white;
 }
 
-aside .preview-chat .overlay {
+aside .preview-chat.selected {
+    background-color: #dcdcdc;
+}
+
+ aside .preview-chat .overlay {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0);
@@ -271,11 +275,32 @@ aside .orario span {
     align-items: flex-end;
 }
 
+.box-conversazioni .chat .contenitore-messaggi {
+    display: none;
+}
+
+.box-conversazioni .chat .contenitore-messaggi.active {
+    display: block;
+}
+
 .box-conversazioni .chat .messaggi-destra{
     padding-top: 80px;
 }
 
 .box-conversazioni .chat .messaggio-text {
+    min-height: 60px;
+    width: 150px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 70px;
+    margin-bottom: 10px;
+}
+
+.messaggio-text-template {
     min-height: 60px;
     width: 150px;
     background-color: lightgreen;
@@ -309,7 +334,21 @@ aside .orario span {
     width: 150px;
     background-color: white;
     border-radius: 10px;
-    align-self: flex-start;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.messaggio-text-bianco-template {
+    min-height: 60px;
+    width: 150px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
