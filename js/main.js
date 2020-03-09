@@ -8,7 +8,7 @@ $(document).ready(function(){
         $('.preview-chat').removeClass('.selected');
         $(this).addClass('.selected');
         var utenteChat = $(this).data('codiceUtente');
-        var nameChat = $(this).find('.nome');
+        var nameChat = $(this).find('.nome').text();
         var avatarChat = $(this).find('.immaginina').clone();
         $('.contenitore-messaggi').each(function(){
             if (utenteChat == $(this).data('codiceUtente')) {
