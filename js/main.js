@@ -92,8 +92,8 @@ $(document).ready(function(){
 
     //scroll function
     function scroll() {
-        var pixelscroll = $('.chat').height();
-        $('.chat').scrollTop(pixelscroll);
+        var pixelscroll = $('.contenitore-messaggi.active').height();
+        $('.contenitore-messaggi.active').scrollTop(pixelscroll);
     }
 
 });
