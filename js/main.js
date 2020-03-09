@@ -74,20 +74,19 @@ $(document).ready(function(){
             var messaggio = $('.messaggi-destra-template .messaggio-text-template').clone();
             messaggio.children('.testo-messaggio').text(messaggioInput);
             messaggio.children('.orario').text(orarioChat);
-            $('.chat').append(messaggio);
+            $('.contenitore-messaggi.active').append(messaggio);
             scroll();
             setTimeout(riceviMessaggi, 1000);                    //setTimeout mi permette di avere un messaggio automatico dopo 1 secondo che ho inserito il mio
         }
 
     }
 
-
     //funzione per i messaggi a sinistra
     function riceviMessaggi(){
         var messaggioAuto = $('.messaggi-sinistra-template .messaggio-text-bianco-template').clone();
         messaggioAuto.children('.testo-messaggio').text('ciao');
         messaggioAuto.children('.orario').text(orarioChat);
-        $('.chat').append(messaggioAuto);
+        $('.contenitore-messaggi.active').append(messaggioAuto);
         scroll();
     }
 

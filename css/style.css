@@ -270,9 +270,6 @@ aside .orario span {
     background-image:url(https://fsa.zobj.net/crop.php?r=Y7XpYTU5wXAZHT1I-HGkqNiqY1umyP2ahrm8H1akctM1u5gRfs35OOglkZ8Cj3zonzO0Gh7mBcZ3bi5czNKnkuqe-F1E1iJjTvnOB1d5p2o59NL3le93Wd6fOMo-lSfWf-IgvhxkJdQv8RSV);
     background-size: contain;
     overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
 
 .box-conversazioni .chat .contenitore-messaggi {
@@ -280,7 +277,9 @@ aside .orario span {
 }
 
 .box-conversazioni .chat .contenitore-messaggi.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .box-conversazioni .chat .messaggi-destra{
@@ -336,11 +335,11 @@ aside .orario span {
     border-radius: 10px;
     margin-right: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-left: 70px;
     margin-bottom: 10px;
-    flex-direction: column;
 }
 
 .messaggio-text-bianco-template {
@@ -350,11 +349,11 @@ aside .orario span {
     border-radius: 10px;
     margin-right: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-left: 70px;
     margin-bottom: 10px;
-    flex-direction: column;
 }
 
 .box-conversazioni .write-msg {
