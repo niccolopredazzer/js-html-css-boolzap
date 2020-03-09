@@ -14,8 +14,9 @@ $(document).ready(function(){
             if (utenteChat == $(this).data('codiceUtente')) {
                 $('.contenitore-messaggi').removeClass('active');
                 $(this).addClass('active');
-                $('.nav-destra .testo p').text(nameChat);
                 $('.nav-destra .avatar').html(avatarChat);
+                $('.nav-destra .testo p').text(nameChat);
+
             }
         });
     });
