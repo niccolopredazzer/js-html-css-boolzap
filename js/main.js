@@ -1,7 +1,5 @@
 $(document).ready(function(){
-    $('#microfono').click(function(){
-        mandaMessaggi();
-    });
+    $('#microfono').click(mandaMessaggi);
 
     //selezionamo la chat dalla preview
     $('.box-preview-chat .preview-chat').click(function(){
