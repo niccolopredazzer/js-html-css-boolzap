@@ -420,6 +420,7 @@ aside .orario span {
 
 .messaggio-text-bianco-template .menu {
     width: 140px;
+    background-color: white;
     padding: 10px 20px;
     border-radius: 2px;
     position: absolute;
