@@ -28,15 +28,6 @@ $(document).ready(function(){
         $('#microfono i').toggleClass('.fas fa-microphone .fas fa-paper-plane');
     });
 
-    //orario
-    var date = new Date()
-    var ore = date.getHours();
-    var minuti = date.getMinutes();
-    if (minuti < 10) {
-        minuti = '0' + minuti;
-    }
-    var orarioChat = ore + ':' + minuti;
-
     //assegno al tasto enter (13) la stessa azione del click
     var input = document.getElementById("contenuto");
     input.addEventListener("keyup", function(event) {
@@ -72,7 +63,7 @@ $(document).ready(function(){
 
    /*$(document).on('click', '.delete', function(){
        $(this).parentsUntil('.messaggi-destra-template').addClass('deleted');
-   });/*
+   });*/
 
 
                                 /* funzioni */
@@ -84,7 +75,7 @@ $(document).ready(function(){
             $('#contenuto').val('');
             var messaggio = $('.messaggi-destra-template .messaggio-text-template').clone();
             messaggio.children('.testo-messaggio').text(messaggioInput);
-            messaggio.children('.orario').text(orarioChat);
+            messaggio.children('.orario').text(orario);
             $('.contenitore-messaggi.active').append(messaggio);
             scroll();
             setTimeout(riceviMessaggi, 1000);                    //setTimeout mi permette di avere un messaggio automatico dopo 1 secondo che ho inserito il mio
@@ -93,12 +84,24 @@ $(document).ready(function(){
     }
 
     //funzione per i messaggi a sinistra
-    function riceviMessaggi(){
+    function riceviMessaggi() {
         var messaggioAuto = $('.messaggi-sinistra-template .messaggio-text-bianco-template').clone();
         messaggioAuto.children('.testo-messaggio').text('ciao');
-        messaggioAuto.children('.orario').text(orarioChat);
+        messaggioAuto.children('.orario').text(orario);
         $('.contenitore-messaggi.active').append(messaggioAuto);
         scroll();
+    }
+
+    //funzione per l'orario
+    function orario () {
+        var date = new Date()
+        var ore = date.getHours();
+        var minuti = date.getMinutes();
+        if (minuti < 10) {
+            minuti = '0' + minuti;
+        }
+        var orarioChat = ore + ':' + minuti;
+        return orarioChat;
     }
 
     //scroll function
