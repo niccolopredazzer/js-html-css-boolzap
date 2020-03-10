@@ -62,6 +62,17 @@ $(document).ready(function(){
         });
     });
 
+    // menu selezionabile dalla freccia
+    $(document).on('click', '.fa-angle-down', function(){
+       $(this).parent('.messaggio-text-template').children('.menu').slideToggle(300);
+   });
+    $(document).on('click', '.fa-angle-down', function(){
+       $(this).parent('.messaggio-text-bianco-template').children('.menu').slideToggle(300);
+   });
+
+   /*$(document).on('click', '.delete', function(){
+       $(this).parentsUntil('.messaggi-destra-template').addClass('deleted');
+   });/*
 
 
                                 /* funzioni */
