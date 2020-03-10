@@ -357,6 +357,7 @@ aside .orario span {
     justify-content: center;
     margin-left: 70px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .box-conversazioni .write-msg {
@@ -393,22 +394,20 @@ aside .orario span {
 
 .template-messaggi {
     display: none;
+    position: relative;
 }
 
-
-.menu {
-    width: 157px;
+.messaggio-text-template .menu {
+    width: 140px;
     background-color: white;
     padding: 10px 20px;
     border-radius: 2px;
     position: absolute;
-    right: 8px;
-    top: 28px;
-    opacity: 0.9;
+    right: 10px;
+    top: 30px;
     z-index: 10;
     display: none;
 }
-
 
 .fa-angle-down {
     font-size: 16px;
@@ -417,6 +416,17 @@ aside .orario span {
     right: 0;
     display: none;
     padding: 0 10px 12px;
+}
+
+.messaggio-text-bianco-template .menu {
+    width: 140px;
+    padding: 10px 20px;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    z-index: 10;
+    display: none;
 }
 
 .deleted {
@@ -429,8 +439,4 @@ aside .orario span {
 
 .menu p:hover {
     cursor: pointer;
-}
-
-.apri-freccia .menu {
-    display: block;
 }
