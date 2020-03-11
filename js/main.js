@@ -34,6 +34,7 @@ $(document).ready(function(){
             document.getElementById("microfono").click();
         }
     });
+
     //FINALMENTE HO TROVATO UN FIX AL PROBLEMA DEL REFRESH DELLA PAGINA CON ENTER
     $(function() {
     $("form").submit(function() { return false; });
@@ -59,9 +60,12 @@ $(document).ready(function(){
        $(this).parent('.messaggio-text-bianco-template').children('.menu').slideToggle(300);
    });
 
-   /*$(document).on('click', '.delete', function(){
-       $(this).parentsUntil('.messaggi-destra-template').addClass('deleted');
-   });*/
+   $(document).on('click', '.delete', function(){
+       $(this).parents('.messaggio-text-template').remove();
+   });
+   $(document).on('click', '.delete', function(){
+       $(this).parents('.messaggio-text-bianco-template').remove();
+   });
 
 
                                 /* funzioni */
