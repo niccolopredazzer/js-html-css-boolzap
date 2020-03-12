@@ -60,12 +60,19 @@ $(document).ready(function(){
        $(this).parent('.messaggio-text-bianco-template').children('.menu').slideToggle(300);
    });
 
+   // eliminare il messaggio
    $(document).on('click', '.delete', function(){
        $(this).parents('.messaggio-text-template').remove();
    });
    $(document).on('click', '.delete', function(){
        $(this).parents('.messaggio-text-bianco-template').remove();
    });
+
+
+   //uso handlebars
+   var source = $('#messaggio-template').html();
+   var template = Handlebars.compile(source);
+
 
 
                                 /* funzioni */
