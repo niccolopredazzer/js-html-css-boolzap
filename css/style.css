@@ -167,7 +167,7 @@ aside .box-preview-chat {
 	background: rgba(0,0,0,0.4);
 }
 
-aside .preview-chat {
+.preview-chat {
     height: 70px;
     border-bottom: 1px solid #e0e0e0;
     display: flex;
@@ -176,11 +176,11 @@ aside .preview-chat {
     background-color: white;
 }
 
-aside .preview-chat.selected {
+.preview-chat.selected {
     background-color: #dcdcdc;
 }
 
- aside .preview-chat .overlay {
+.preview-chat .overlay {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0);
@@ -193,35 +193,35 @@ aside .preview-chat.selected {
     text-align: center;
 }
 
-aside .preview-chat:hover .overlay {
+.preview-chat:hover .overlay {
     opacity: 1;
     cursor: pointer;
 }
 
-aside .preview-chat .avatar {
+.preview-chat .avatar {
     padding-left: 10px;
 }
 
-aside .preview-chat .testo {
+.preview-chat .testo {
     margin-left: 20px;
 }
 
-aside .preview-chat .testo p {
+.preview-chat .testo p {
     font-size: 18px;
     font-weight: 700;
 }
 
-aside .preview-chat .testo span {
+.preview-chat .testo span {
     color: #919191;
     font-size: 15px;
 }
 
-aside .orario  {
+.orario  {
     margin-left: auto;
     padding-right: 5px;
 }
 
-aside .orario span {
+.orario span {
     color: #919191;
     font-size: 12px;
 }
