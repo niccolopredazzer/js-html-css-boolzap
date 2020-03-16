@@ -78,42 +78,42 @@ $(document).ready(function(){
        {
            numeroConversazione: 0,
            source:'img/avatar2.png',
-           nomeContatto: 'Gino'
+           nomeContatto: 'Daniele'
        },
        {
            numeroConversazione: 1,
            source:'img/avatar3.png',
-           nomeContatto: 'Piero'
+           nomeContatto: 'Harry Potter'
        },
        {
            numeroConversazione: 2,
            source:'img/avatar4.png',
-           nomeContatto: 'Ugo'
+           nomeContatto: 'Ernesto'
        },
        {
            numeroConversazione: 3,
            source:'img/avatar5.png',
-           nomeContatto: 'Jessica'
+           nomeContatto: 'Camillo Benso Conte di Cavour'
        },
        {
            numeroConversazione: 4,
            source:'img/avatar6.png',
-           nomeContatto: 'Lina'
+           nomeContatto: 'Eleonora'
        },
        {
            numeroConversazione: 5,
            source:'img/avatar7.png',
-           nomeContatto: 'Pina'
+           nomeContatto: 'Francesca'
        },
        {
            numeroConversazione: 6,
            source:'img/avatar7.png',
-           nomeContatto: 'Esmeralda'
+           nomeContatto: 'Federico'
        },
        {
            numeroConversazione: 7,
            source:'img/avatar7.png',
-           nomeContatto: 'Harry'
+           nomeContatto: 'Davide'
        }
    ];
 
