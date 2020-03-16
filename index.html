@@ -40,7 +40,7 @@
                         <input id="cerca-contatti" placeholder="cerca o inizia una nuova chat">
                     </div>
                     <div class="box-preview-chat">
-                        <div class="preview-chat" data-codice-utente="bbb">
+                        <!--<div class="preview-chat" data-codice-utente="bbb">
                             <div class="overlay"></div>
                             <div class="avatar">
                                 <img class="immaginina" src="img/avatar2.png" alt="">
@@ -209,6 +209,7 @@
                                 <span>16:15</span>
                             </div>
                         </div>
+                    -->
                     </div>
                 </aside>
                 <div class="box-conversazioni">
@@ -468,6 +469,18 @@
 
         </script>
          -->
+         <script id="preview-template" type="text/x-handlebars-template">
+           <div data-codice-utente="{{numeroConversazione}}" class="preview-chat">
+               <div class="avatar">
+                   <img src="{{source}}" alt="avatar">
+               </div>
+               <div class="testo">
+                   <p>{{nomeContatto}}</p>
+                   <span>Non poteva essere altrimenti.</span>
+               </div>
+               <span class="orario">12.56</span>
+           </div>
+           
 
         <div class="template-messaggi">
             <div class="messaggi-destra-template">
@@ -493,6 +506,6 @@
                 </div>
             </div>
         </div>
-    
+
     </body>
 </html>

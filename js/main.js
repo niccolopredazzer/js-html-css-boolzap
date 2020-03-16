@@ -70,10 +70,56 @@ $(document).ready(function(){
 
 
    //uso handlebars
-   var source = $('#messaggio-template').html();
-   var template = Handlebars.compile(source);
+   var sourceContatti = $('#preview-template').html();
+   var templateContatto = Handlebars.compile(sourceContatti);
 
 
+   var listaContatti = [
+       {
+           numeroConversazione: 0,
+           source:'img/avatar2.png',
+           nomeContatto: 'Gino'
+       },
+       {
+           numeroConversazione: 1,
+           source:'img/avatar3.png',
+           nomeContatto: 'Piero'
+       },
+       {
+           numeroConversazione: 2,
+           source:'img/avatar4.png',
+           nomeContatto: 'Ugo'
+       },
+       {
+           numeroConversazione: 3,
+           source:'img/avatar5.png',
+           nomeContatto: 'Jessica'
+       },
+       {
+           numeroConversazione: 4,
+           source:'img/avatar6.png',
+           nomeContatto: 'Lina'
+       },
+       {
+           numeroConversazione: 5,
+           source:'img/avatar7.png',
+           nomeContatto: 'Pina'
+       },
+       {
+           numeroConversazione: 6,
+           source:'img/avatar7.png',
+           nomeContatto: 'Esmeralda'
+       },
+       {
+           numeroConversazione: 7,
+           source:'img/avatar7.png',
+           nomeContatto: 'Harry'
+       }
+   ];
+
+   for (var i = 0; i < listaContatti.length; i++) {
+           var contattoTemp = templateContatto(listaContatti[i]);
+           $('.box-preview-chat').append(contattoTemp);
 
                                 /* funzioni */
 
