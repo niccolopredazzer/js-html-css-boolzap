@@ -70,7 +70,7 @@ $(document).ready(function(){
 
 
    //uso handlebars
-   var sourceContatti = $('#preview-template').html();
+  /* var sourceContatti = $('#preview-template').html();
    var templateContatto = Handlebars.compile(sourceContatti);
 
 
@@ -120,7 +120,7 @@ $(document).ready(function(){
    for (var i = 0; i < listaContatti.length; i++) {
            var contattoTemp = templateContatto(listaContatti[i]);
            $('.box-preview-chat').append(contattoTemp);
-
+ */
                                 /* funzioni */
 
     //funzione per i messaggi a destra
